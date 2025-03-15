@@ -1,5 +1,4 @@
 import streamlit as st
-from dotenv import load_dotenv
 import time
 
 # LangChain Modules
@@ -12,8 +11,7 @@ from langchain.chains import ConversationalRetrievalChain
 from langchain.chains.combine_documents import create_stuff_documents_chain
 from langchain_core.prompts import ChatPromptTemplate
 
-# Load environment variables
-load_dotenv()
+
 
 # Retrieve API Key from Streamlit Secrets
 GOOGLE_API_KEY = st.secrets["api_key"]
